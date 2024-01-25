@@ -1,7 +1,15 @@
 <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
+
     <a class="navbar-brand" href="<%= url_for() %>">
-      <strong><%= theme.navbar.blog_title || config.title %></strong>
+      <!-- <strong><%= theme.navbar.blog_title || config.title %></strong> -->
+      <span class="logo_1">&lt;</span>
+      <span class="logo_2">/</span>
+      <span class="logo_3">#</span> 
+      <%= theme.navbar.blog_title || config.title %>
+      <span class="logo_3">#</span>
+      <span class="logo_2">/</span>
+      <span class="logo_1">&gt;</span>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
